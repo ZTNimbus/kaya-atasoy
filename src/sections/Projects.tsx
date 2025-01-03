@@ -44,7 +44,7 @@ const portfolioProjects = [
   },
 ];
 
-const Projects = () => {
+function Projects() {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
@@ -116,6 +116,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Projects;

@@ -5,8 +5,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import HeroOrbit from "@/components/HeroOrbit";
-
-const Hero = () => {
+function Hero() {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute bottom-0 flex items-center justify-center left-0 right-0 text-orange-500 text-xl">
@@ -109,6 +108,6 @@ const Hero = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Hero;
