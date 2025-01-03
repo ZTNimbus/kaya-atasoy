@@ -9,6 +9,9 @@ import HeroOrbit from "@/components/HeroOrbit";
 const Hero = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div className="absolute bottom-0 flex items-center justify-center left-0 right-0 text-orange-500 text-xl">
+        This website is currently under production
+      </div>
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -27,10 +30,6 @@ const Hero = () => {
 
         <HeroOrbit size={550} rotation={20}>
           <StarIcon className="size-12 text-emerald-300" />
-        </HeroOrbit>
-
-        <HeroOrbit size={590} rotation={98}>
-          <StarIcon className="size-8 text-emerald-300" />
         </HeroOrbit>
 
         <HeroOrbit size={590} rotation={98}>
@@ -85,8 +84,11 @@ const Hero = () => {
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">
-            Building Exceptional User Experiences
+            Kaya ATASOY
           </h1>
+          <p className="text-center mt-3 mb-6 text-lg tracking-wide font-serif">
+            Software Developer
+          </p>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in Full Stack Development, utilizing cutting edge
             technologies to bring great user experiences and applications to
