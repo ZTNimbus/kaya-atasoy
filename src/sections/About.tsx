@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import BookImage from "@/assets/images/book-cover.png";
@@ -15,6 +17,8 @@ import NodeIcon from "@/assets/icons/node.svg";
 import NextIcon from "@/assets/icons/nextjs.svg";
 import CardHeader from "@/components/CardHeader";
 import TechItems from "@/components/TechItems";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const tech = [
   { title: "Javascript", iconType: JavascriptIcon },
@@ -32,11 +36,16 @@ const hobbies = [
   { title: "Legos", emoji: "🌻", left: "50%", top: "5%" },
   { title: "Video Games", emoji: "🎮", left: "10%", top: "35%" },
   { title: "Music", emoji: "🎼", left: "35%", top: "40%" },
+  { title: "Swimming", emoji: "🏊‍♂️", left: "65%", top: "60%" },
+  { title: "Cooking", emoji: "🥢", left: "75%", top: "0%" },
+  { title: "Sports", emoji: "⚽", left: "5%", top: "65%" },
 ];
 
 function About() {
+  const constraintRef = useRef(null);
+
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -62,11 +71,14 @@ function About() {
                 description="Observe the technologies I use to shape the digital world."
               />
 
-              <TechItems tech={tech} />
+              <TechItems
+                tech={tech}
+                techWrapperClassName="animate-move-left [animation-duration:30s]"
+              />
               <TechItems
                 tech={tech}
                 className="mt-6"
-                techWrapperClassName="-translate-x-1/2"
+                techWrapperClassName="animate-move-right [animation-duration:15s]"
               />
             </Card>
           </div>
@@ -79,10 +91,12 @@ function About() {
                 className="p-6"
               />
 
-              <div className="relative flex-1">
+              <div className="relative flex-1" ref={constraintRef}>
                 {hobbies.map((item) => {
                   return (
-                    <div
+                    <motion.div
+                      drag
+                      dragConstraints={constraintRef}
                       key={item.title}
                       className="inline-flex gap-2 px-6 items-center bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                       style={{ left: item.left, top: item.top }}
@@ -91,7 +105,7 @@ function About() {
                         {item.title}
                       </span>
                       <span>{item.emoji}</span>
-                    </div>
+                    </motion.div>
                   );
                 })}
               </div>
@@ -103,7 +117,11 @@ function About() {
                 alt="map"
                 className="h-full w-full object-cover object-left-top"
               />
-              <div className="absolute bottom-3 right-0 -translate-x-0 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-green-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute bottom-3 right-0 -translate-x-0 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]" />
+
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-300 to-sky-400 -z-10" />
+
                 <Image
                   src={memojiSmile}
                   alt="memoji smile"

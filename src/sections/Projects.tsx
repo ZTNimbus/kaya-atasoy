@@ -2,7 +2,6 @@ import touchHomePage from "@/assets/images/touch.png";
 import CaffiendHomePage from "@/assets/images/caffiend.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
@@ -42,12 +41,15 @@ function Projects() {
           title="Featured Projects"
           description="Check out the digital experiences I brought to life."
         />
-        <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {portfolioProjects.map((project) => {
+        <div className="flex flex-col mt-10 gap-20 md:mt-20" id="projects">
+          {portfolioProjects.map((project, index) => {
             return (
               <Card
                 key={project.title}
-                className="md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 pb-0"
+                className="md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 pb-0 sticky"
+                style={{
+                  top: `calc(64px + ${index * 40}px)`,
+                }}
               >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
