@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -22,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={twMerge(
           inter.variable,

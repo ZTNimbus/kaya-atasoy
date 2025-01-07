@@ -144,7 +144,7 @@ function Hero() {
             Kaya ATASOY
           </h1>
           <p className="text-center mt-3 mb-6 text-lg tracking-wide font-serif">
-            Software Developer
+            Talented Software Developer
           </p>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in Full Stack Development, utilizing cutting edge
