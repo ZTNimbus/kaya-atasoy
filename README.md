@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kaya ATASOY's Portfolio Website 🌟
 
-## Getting Started
+Welcome to the repository for my personal portfolio website, a showcase of my skills, projects, and passion for creating websites and web applications using clean, modern, and maintainable code.
 
-First, run the development server:
+🌐 **Live Website**: [kaya-atasoy.site](https://www.kaya-atasoy.site/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hi! I'm Kaya ATASOY, a Software Developer from Turkey 🇹🇷. I am deeply passionate about building web applications and websites that follow best practices, focus on user experience, and deliver exceptional functionality.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I am currently **open to remote job opportunities** as a Software Developer! Let's work together to bring digital experiences to life.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Frontend Development:**  
+JavaScript, ReactJS, NextJS, TailwindCSS, Redux, React Router, React Context, Zustand, TanStack Query
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Backend Development:**  
+NodeJS, Express, Socket.io, Prisma, Supabase, Firebase, MongoDB
 
-## Deploy on Vercel
+**Tools & Platforms:**  
+Docker, NPM, Postman
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🌟 Features
+
+- **Interactive Design**: Engaging and modern UI for showcasing projects and skills.
+- **Responsive**: Fully optimized for all devices and screen sizes.
+- **Customizable**: Easily extendable to add more projects or sections.
+
+---
+
+## 📬 Contact Me
+
+Looking to collaborate or have an exciting job opportunity? Feel free to reach out!
+
+- **Email**: kaya.atsy@gmail.com
+- **LinkedIn**: [Kaya ATASOY](https://www.linkedin.com/in/kaya-atasoy-906786257/)
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
