@@ -1,5 +1,6 @@
 import touchHomePage from "@/assets/images/touch.png";
 import CaffiendHomePage from "@/assets/images/caffiend.png";
+import MelodiaHomePage from "@/assets/images/melodia.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import SectionHeader from "@/components/SectionHeader";
@@ -7,11 +8,23 @@ import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
+    company: "Melodia",
+    year: "2025",
+    title: "Web Music Player",
+    results: [
+      { title: "Custom Music Player and Queue System" },
+      { title: "Realtime Messaging and User Activities" },
+      { title: "Admin Dashboard for Library Management" },
+    ],
+    link: "https://melodia-aaln.onrender.com/",
+    image: MelodiaHomePage,
+  },
+  {
     company: "Touch",
     year: "2025",
     title: "Realtime Chat Application",
     results: [
-      { title: "Realtime functionalities" },
+      { title: "Realtime Functionalities" },
       { title: "User Authentication and Customization" },
       { title: "User Friendly Interface" },
     ],
