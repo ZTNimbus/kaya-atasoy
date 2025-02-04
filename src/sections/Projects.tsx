@@ -1,6 +1,7 @@
 import touchHomePage from "@/assets/images/touch.png";
 import CaffiendHomePage from "@/assets/images/caffiend.png";
 import MelodiaHomePage from "@/assets/images/melodia.png";
+import GoogleFlightsHomePage from "@/assets/images/google-flights-clone.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import SectionHeader from "@/components/SectionHeader";
@@ -30,6 +31,18 @@ const portfolioProjects = [
     ],
     link: "https://touch-chkm.onrender.com/",
     image: touchHomePage,
+  },
+  {
+    company: "Google Flights",
+    year: "2025",
+    title: "Google Flights Clone",
+    results: [
+      { title: "Find The Best Plane Ticket Deals" },
+      { title: "Responsive On All Devices" },
+      { title: "Save URL For Future Searches" },
+    ],
+    link: "https://flights-replica.netlify.app/",
+    image: GoogleFlightsHomePage,
   },
   {
     company: "Caffiend",
