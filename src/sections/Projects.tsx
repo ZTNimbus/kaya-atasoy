@@ -2,12 +2,25 @@ import touchHomePage from "@/assets/images/touch.png";
 import CaffiendHomePage from "@/assets/images/caffiend.png";
 import MelodiaHomePage from "@/assets/images/melodia.png";
 import GoogleFlightsHomePage from "@/assets/images/google-flights-clone.png";
+import HutletHomePage from "@/assets/images/hutletHomePage.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
 const portfolioProjects = [
+  {
+    company: "Hutlet",
+    year: "2025",
+    title: "Hut Booking Application",
+    results: [
+      { title: "Secure login and registration using NextAuth.js" },
+      { title: "Check hut availability in real-time" },
+      { title: "Users can view, create, and cancel bookings" },
+    ],
+    link: "https://hutlet-cabins.vercel.app/",
+    image: HutletHomePage,
+  },
   {
     company: "Melodia",
     year: "2025",
